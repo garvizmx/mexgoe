@@ -60,7 +60,7 @@ img.emoji {
 <link rel='stylesheet' id='imic_fullcalendar_css-css'  href='wp-content/themes/NativeChurch/plugins/fullcalendar/fullcalendar.min6770.css?ver=2.6.5' type='text/css' media='all' />
 <link rel='stylesheet' id='imic_fullcalendar_print-css'  href='wp-content/themes/NativeChurch/plugins/fullcalendar/fullcalendar.print6770.css?ver=2.6.5' type='text/css' media='print' />
 <link rel='stylesheet' id='imic_colors-css'  href='wp-content/themes/NativeChurch/colors/color26770.css?ver=2.6.5' type='text/css' media='all' />
-<link rel='stylesheet' id='redux-google-fonts-imic_options-css'  href='http://fonts.googleapis.com/css?family=Roboto%7CRoboto+Condensed%7CVolkhov&amp;subset=latin&amp;ver=1479578954' type='text/css' media='all' />
+<link rel='stylesheet' id='redux-google-fonts-imic_options-css'  href='https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Condensed%7CVolkhov&amp;subset=latin&amp;ver=1479578954' type='text/css' media='all' />
 <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js?ver=4.8'></script>
 <script type='text/javascript' src='wp-content/plugins/ipray/public/js/jquery.conflictionef15.js?ver=4.8'></script>
 <script type='text/javascript' src='wp-content/plugins/ipray/public/js/jquery.simplePaginationef15.js?ver=4.8'></script>
@@ -158,14 +158,29 @@ margin: 0 auto;
     </head>
     <!--// CLOSE HEAD //-->
     <body class="page-template page-template-template-events_grid page-template-template-events_grid-php page page-id-369">
-	    <div id="fb-root"></div>
-	    <script>(function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0];
-              if (d.getElementById(id)) return;
-              js = d.createElement(s); js.id = id;
-              js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
-              fjs.parentNode.insertBefore(js, fjs);
-              }(document, 'script', 'facebook-jssdk'));</script>
+	<script>
+        window.fbAsyncInit = funtction() {
+	FB.init({
+		appId : '1504580286459502',
+		xfbml : true,
+		version : 'v2.9'
+	});
+	FB.AppEvents.logPageView();
+        };
+        (function(d, s, id){
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/sdk.js";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+        </script>
+	<div
+		class="fb-like"
+		data-share="true"
+		data-with="450"
+		data-show-faces="true">
+	</div>
         <!--[if lt IE 7]>
                 <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]--> 
@@ -247,7 +262,7 @@ margin: 0 auto;
    <div class='dsm-fb-event' data-embed-id='2015'></div><script src='https://www.displaysocialmedia.com/app/embed/facebook-events/widget.js'></script>
 	</div>
 </div>
-<!-- Start Footer -->
+<https://packer-pyramid-42248.netlify.com!-- Start Footer -->
 <footer class="site-footer">
     <div class="container">
         <div class="row">
